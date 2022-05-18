@@ -41,3 +41,6 @@
 - 懒汉式-方式4（静态内部类）
   - `com.ruochen.pattern.singleton.demo5`
   - JVM 在加载外部类的过程中，不会加载静态内部类，只有内部类的属性/方法被调用时才会被加载
+- 枚举方式(饿汉式-首选)
+  - `com.ruochen.pattern.singleton.demo6`
+  - 枚举类型线程安全，只会装载一次

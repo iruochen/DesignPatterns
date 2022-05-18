@@ -30,11 +30,14 @@
 > - 懒汉式：类加载不会导致该单实例对象被创建，而是首次使用该对象时才会创建
 
 - 饿汉式-方式1（静态变量方式）
-  - com.ruochen.pattern.singleton.demo1
+  - `com.ruochen.pattern.singleton.demo1`
 - 饿汉式-方式2（静态代码块方式）
-  - com.ruochen.pattern.singleton.demo2
+  - `com.ruochen.pattern.singleton.demo2`
 - 懒汉式-方式1、2（线程不安全、线程安全）
-  - com.ruochen.pattern.singleton.demo3
+  - `com.ruochen.pattern.singleton.demo3`
 - 懒汉式-方式3（双重检查锁）
-  - com.ruochen.pattern.singleton.demo4
+  - `com.ruochen.pattern.singleton.demo4`
   - 问题：空指针 使用 `volatile`
+- 懒汉式-方式4（静态内部类）
+  - `com.ruochen.pattern.singleton.demo5`
+  - JVM 在加载外部类的过程中，不会加载静态内部类，只有内部类的属性/方法被调用时才会被加载

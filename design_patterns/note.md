@@ -33,5 +33,8 @@
   - com.ruochen.pattern.singleton.demo1
 - 饿汉式-方式2（静态代码块方式）
   - com.ruochen.pattern.singleton.demo2
-  
-
+- 懒汉式-方式1、2（线程不安全、线程安全）
+  - com.ruochen.pattern.singleton.demo3
+- 懒汉式-方式3（双重检查锁）
+  - com.ruochen.pattern.singleton.demo4
+  - 问题：空指针 使用 `volatile`

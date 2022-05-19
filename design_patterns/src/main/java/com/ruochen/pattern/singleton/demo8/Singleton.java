@@ -6,8 +6,18 @@ import java.io.Serializable;
  * 静态内部类方式
  */
 public class Singleton implements Serializable {
-    private Singleton() {
 
+    private static boolean flag = false;
+
+    private Singleton() {
+        synchronized (Singleton.class) {
+            // 判断flag的值是否是true，如果是true，说明非第一次访问，抛出异常；否则，说明第一次访问
+            if (flag) {
+                throw new RuntimeException("不能创建多个对象");
+            }
+            // 将flag的值设置为true
+            flag = true;
+        }
     }
 
     // 定义一个静态内部类

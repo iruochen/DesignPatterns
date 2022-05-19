@@ -54,3 +54,12 @@
 ### 单例模式案例
 - Runtime类
   - `com.ruochen.pattern.singleton.demo9`
+  
+## 工厂模式
+- 优点：解耦
+
+### 简单工厂模式
+- 抽象产品：定义了产品的规范，描述了产品的主要特征和功能（coffee类)
+- 具体产品：实现或者继承抽象产品的子类（AmericanCoffee类和LatteCoffee类）
+- 具体工厂：提供了创建产品的方法，调用者通过该方法来获取产品
+

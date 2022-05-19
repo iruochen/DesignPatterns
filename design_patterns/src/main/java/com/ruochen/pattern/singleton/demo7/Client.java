@@ -5,7 +5,7 @@ import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
 import java.io.*;
 
 /**
- * 测试反射破坏单例模式
+ * 测试序列化破坏单例模式
  */
 public class Client {
     public static void main(String[] args) throws Exception {

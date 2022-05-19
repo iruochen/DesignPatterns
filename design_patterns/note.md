@@ -48,3 +48,5 @@
 ### 单例模式存在问题
 - 序列化破坏单例模式
   - `com.ruochen.pattern.singleton.demo7`
+- 反射破坏单例模式
+  - `com.ruochen.pattern.singleton.demo8`

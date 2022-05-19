@@ -50,3 +50,7 @@
   - `com.ruochen.pattern.singleton.demo7`
 - 反射破坏单例模式
   - `com.ruochen.pattern.singleton.demo8`
+    
+### 单例模式案例
+- Runtime类
+  - `com.ruochen.pattern.singleton.demo9`
